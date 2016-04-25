@@ -28,7 +28,7 @@ app.get('/', function(req, res) {
 });
 
 //use user routes for those routes
-app.use('/users', userRoutes);
+app.use('/home', userRoutes);
 
 //sets the port for the server
 app.listen(port, function(){

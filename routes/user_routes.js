@@ -4,7 +4,8 @@ var userRoutes		= express.Router();
 
 //create routes for /users
 userRoutes.get('/', function(req, res) {
-  res.json({message: 'hello from users /'});
+  var destinations = ['Burger Lounge', 'True Food', 'Tender Greens', '800 Degree Pizza'];
+  res.render('home/index', {message: destinations});
 });
 
 
