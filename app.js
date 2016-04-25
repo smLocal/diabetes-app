@@ -13,6 +13,11 @@ mongoose.connect(mongoUrl);
 //logs requests made to the app
 app.use(logger('dev'));
 
+// Serve static assets
+app.use( express.static(__dirname + '/public') );
+// use EJS for server-side templates
+app.set('view engine', 'ejs');
+
 //makes JS objects available in requests
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
