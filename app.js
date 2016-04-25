@@ -3,7 +3,7 @@ var app = express();
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-var mongoUrl = process.env.MONGO_URL || 'mongodb://localhost/fillInTheBlank';
+// var mongoUrl = process.env.MONGO_URL || 'mongodb://localhost/fillInTheBlank';
 var port = process.env.PORT || 3000;
 var userRoutes = require('./routes/user_routes.js');
 
