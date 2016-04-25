@@ -18,6 +18,7 @@
   "homepage": "https://github.com/KateWood/office_hours_nov_12#readme",
   "dependencies": {
     "body-parser": "^1.15.0",
+    "bootstrap": "^3.3.6",
     "express": "^4.13.4",
     "mongoose": "^4.4.13",
     "morgan": "^1.7.0"
