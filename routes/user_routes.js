@@ -8,5 +8,21 @@ userRoutes.get('/', function(req, res) {
   res.render('home/index', {message: destinations});
 });
 
+// userRoutes.get('/burger', function(req, res) {
+//   res.render('home/burger', {message: 'hello'});
+// });
+// userRoutes.post('/burger', function(req, res) {
+//   res.send(req.body.optradio);
+// });
+userRoutes.get('/burger', function (req, res) {
+        res.render('home/burger', {
+            title: "Login", //page title
+            action: "/login", //post action for the form
+            fields: [
+            {name:'email',type:'text',property:'required'},   //first field for the form
+            {name:'password',type:'password',property:'required'}   //another field for the form
+            ]
+        });
+    });
 
 module.exports = userRoutes;

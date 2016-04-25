@@ -30,6 +30,9 @@ app.get('/', function(req, res) {
 //use user routes for those routes
 app.use('/home', userRoutes);
 
+
+
+
 //sets the port for the server
 app.listen(port, function(){
 	console.log('Magic is happening on ' + port);
