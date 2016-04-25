@@ -8,7 +8,7 @@ var port = process.env.PORT || 3000;
 var userRoutes = require('./routes/user_routes.js');
 
 //establish connection to mongo database
-mongoose.connect(mongoUrl);
+// mongoose.connect(mongoUrl);
 
 //logs requests made to the app
 app.use(logger('dev'));
