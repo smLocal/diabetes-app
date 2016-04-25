@@ -3,12 +3,12 @@ var app = express();
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-var mongoUrl = process.env.MONGO_URL || 'mongodb://localhost/fillInTheBlank';
+// var mongoUrl = process.env.MONGO_URL || 'mongodb://localhost/fillInTheBlank';
 var port = process.env.PORT || 3000;
 var userRoutes = require('./routes/user_routes.js');
 
 //establish connection to mongo database
-mongoose.connect(mongoUrl);
+// mongoose.connect(mongoUrl);
 
 //logs requests made to the app
 app.use(logger('dev'));
@@ -28,7 +28,7 @@ app.get('/', function(req, res) {
 });
 
 //use user routes for those routes
-app.use('/users', userRoutes);
+app.use('/home', userRoutes);
 
 //sets the port for the server
 app.listen(port, function(){
